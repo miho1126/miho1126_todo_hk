@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../11/assets/css/reset.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-0c38nfCMzF8w8DBI+9nTWzApOpr1z0WuyswL4y6x/2ZTtmj/Ki5TedKeUcFusC/k" crossorigin="anonymous">
+  <link rel="stylesheet" href="../11/assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="card">
+      <h1>Daily Diary</h1>
+      <p>How is your day?</p>
+      <div>
+        <input type="text" id="text1" class="sample" value="" placeholder="Please put your nice picture or movie">
+      </div>
+
+      <iframe  src="https://www.youtube.com/embed/cQYRB-i_i0M?start=73" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <p>How do you feel?
+        <br>
+        <br>
+        <input type="radio" id="q1" value=""><i class="far fa-smile-beam"></i>
+        <input type="radio" id="q1" value=""><i class="far fa-grin-wink"></i>
+        <input type="radio" id="q1" value=""><i class="far fa-grin-stars"></i>
+        <input type="radio" id="q1" value=""><i class="far fa-grin-squint-tears"></i>
+        <input type="radio" id="q1" value=""><i class="far fa-frown-open"></i>
+        <input type="radio" id="q1" value=""><i class="far fa-tired"></i>
+      </p>
+
+      <div>DATE
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+        <input type="text" id="calendarTEST" placeholder="Click here to put date">
+      </div>
+      <br>
+
+      <textarea id="inquiry" name="inquiry"
+      rows="3" cols="30" wrap="hard"
+      style="width:300px;height:100px;"
+      placeholder="Feel free to put your message♬"
+      ></textarea>
+
+      <p>
+        <button id="add"><span>登録</span></button>
+        <ul id="list"></ul>
+      </p>
+
+
+    </section>
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+  <script>
+      flatpickr.localize(flatpickr.l10ns.ja);
+      flatpickr('#calendarTEST');
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
